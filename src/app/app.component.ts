@@ -1,25 +1,17 @@
 import { Component, effect, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Header } from './components/header/header';
+import { Home } from './home/home';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [RouterOutlet, Header, Home],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  count = signal(0);
-
-  constructor() {
-    effect(() => {
-      console.log(`Count value is: ${this.count()}`);
-    });
-  }
-
-  increment() {
-    this.count.update((value) => value + 1);
-  }
-
-  decrement() {
-    this.count.update((value) => value - 1);
-  }
+  keyEvents = (event: KeyboardEvent) => {
+    console.log(`key pressed: ${event.key}`);
+  };
 }
