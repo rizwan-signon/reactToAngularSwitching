@@ -1,13 +1,9 @@
-import { Component, signal } from '@angular/core';
-import { Greeting } from '../components/greeting/greeting';
-import { Counter } from '../components/counter/counter';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  imports: [Greeting, Counter],
+  imports: [],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {
-  homeMessage = signal('Welcome to Angular 16!');
-}
+export class Home {}
