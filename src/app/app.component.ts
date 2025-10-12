@@ -2,7 +2,6 @@ import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Home } from './home/home';
 import { Header } from './components/header/header';
-import { About } from './about/about';
 import { Footer } from './components/footer/footer';
 
 @Component({
