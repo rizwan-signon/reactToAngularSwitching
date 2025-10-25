@@ -1,0 +1,19 @@
+.app_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}

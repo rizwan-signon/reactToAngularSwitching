@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-todos',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './about.html',
-  styleUrls: ['./about.css'],
+  templateUrl: './todos.html',
+  styleUrls: ['./todos.css'],
 })
-export class About {}
+export class Todos {}
